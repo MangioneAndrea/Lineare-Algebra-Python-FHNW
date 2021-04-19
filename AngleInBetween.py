@@ -1,14 +1,15 @@
 import VectorUtil
 import math
+from VectorLength import vector_length
 from ScalarProduct import scalar_product
 
 
 def angle_in_between(u, v):
     product = scalar_product(u, v)
     print()
-    ulen = VectorUtil.vector_length(u)
+    ulen = vector_length(u)
     print()
-    vlen = VectorUtil.vector_length(v)
+    vlen = vector_length(v)
     print()
     print("cos(γ) = u*v / |u|*|v|")
     print(product, " / (", ulen, " * ", vlen, ")")
@@ -16,7 +17,7 @@ def angle_in_between(u, v):
     cos = product/(ulen * vlen)
     print("cos(γ) = ", cos)
     print("γ = arccos(cos(γ))")
-    print("γ = ", math.acos(cos),"rad ~", math.degrees(math.acos(cos)),"°")
+    print("γ = ", math.acos(cos), "rad ~", math.degrees(math.acos(cos)), "°")
 
 
 if(__name__ == "__main__"):
