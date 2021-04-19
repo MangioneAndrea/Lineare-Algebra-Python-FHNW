@@ -1,7 +1,8 @@
 import VectorUtil
 
+
 def ortogonal_vector(u, v):
-    print("result: \n", v, " X ", u, " = \n")
+    print(v, " x ", u, ":")
 
     print("u[y] * v[z] - u[z] * v[y]")
     print("u[z] * v[x] - u[x] * v[z]")

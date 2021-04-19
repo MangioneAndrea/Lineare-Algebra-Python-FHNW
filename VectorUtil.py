@@ -24,7 +24,7 @@ def read_vector(msg):
 
 
 def vector_length(v):
-    print(v, " length")
+    print(v, " length:")
     print()
     print("sqrt(v[x]² + v[y]² + v[z]²)")
     print("sqrt(", v[0], "² + ", v[1], "² + v", v[2], "²)")
